@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    "left right";
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#left{
+    grid-area: left;
+    background-color: white;
+    grid-row: 1/2;
+    
+}
+
+#right{
+    grid-area: right;
+    background-color: lightblue;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 10%;
+    margin:auto;
+}
+
+#buttons button {
+    width: 30%;
+    height: 50%;
+}
+
+
+
+/* LEFT SKILLBAR */
+
+#skillContainer{
+    width: 90%;
+    margin:auto;
+}
+
+
+.wrapper{
+	background-color:grey;
+	margin:0px;
+	padding:0px;
+}
+
+.wrapper div{
+	margin:10px 0px;
+	padding:2px 10px;
+	border-radius:5px;
+	color:white;
+}
+
+.wrapper span {
+    float:right;
+    font-size:12px;
+    margin-top:2px;
+}
+
+#strength, #vitality, #stamina {
+    background-color:#1D1F20;
+    transition:2s;
+	background-color:#1D1F20;
+
+}
+
+
+#strength{
+    width:90%;
+    min-width: 15%;
+}
+#vitality{
+    width: 50%;
+    min-width: 15%;
+}
+#stamina{
+    width: 25%;
+    min-width: 15%;;
+}
+
+.remove {
+    text-align: center;
+    padding: 2%;
+}
+
+#imgContainer{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+#imgContainer img {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    margin-top:3%;
+    opacity: 0.7;
+}
+
+#imgContainer img:hover {
+    opacity: 1;
+}
